@@ -7,8 +7,7 @@ namespace MenuFramework
     {
         static void Main(string[] args)
         {
-            Logger myLogger = new Logger();
-            myLogger.RunLogger();
+            
         }
     }
 }
