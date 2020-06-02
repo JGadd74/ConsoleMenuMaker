@@ -1,0 +1,13 @@
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\obj\Debug\netcoreapp3.1\MenuFramework.csprojAssemblyReference.cache
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\obj\Debug\netcoreapp3.1\MenuFramework.AssemblyInfoInputs.cache
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\obj\Debug\netcoreapp3.1\MenuFramework.AssemblyInfo.cs
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\bin\Debug\netcoreapp3.1\MenuFramework.exe
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\bin\Debug\netcoreapp3.1\MenuFramework.deps.json
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\bin\Debug\netcoreapp3.1\MenuFramework.runtimeconfig.json
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\bin\Debug\netcoreapp3.1\MenuFramework.runtimeconfig.dev.json
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\bin\Debug\netcoreapp3.1\MenuFramework.dll
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\bin\Debug\netcoreapp3.1\MenuFramework.pdb
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\obj\Debug\netcoreapp3.1\MenuFramework.dll
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\obj\Debug\netcoreapp3.1\MenuFramework.pdb
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\obj\Debug\netcoreapp3.1\MenuFramework.csproj.CoreCompileInputs.cache
+C:\Users\Jon-k\source\repos\MenuFramework\MenuFramework\obj\Debug\netcoreapp3.1\MenuFramework.genruntimeconfig.cache
