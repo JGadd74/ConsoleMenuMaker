@@ -109,7 +109,7 @@ namespace MenuFramework
             {
                 headerPrompt = input;
             }
-            else throw new Exception("Header Prompts must be less than 15 characters long.");
+            else throw new Exception("Header Prompts must be less than 100 characters long.");
         }
         private void GenerateNonScrollHeader()
         {
@@ -164,7 +164,9 @@ namespace MenuFramework
         }
         private void displayMenu() // 
         {
-            if (type != 3) GenerateNonScrollHeader();
+            Console.SetCursorPosition(0, 0);
+
+            if (type != 3) GenerateNonScrollHeader(); // WHY DOES THERE NEED TO BE DIFFERENT GENERATEHEADER METHODS???? //HEADER SIZE SHOULD BE DETERMINED BY SCROLL ITEMS SIZE OR VICE VERSA
             else GenerateScrollHeader();
             switch (type)
             {
@@ -237,7 +239,6 @@ namespace MenuFramework
                         if (currentScrollSelection < userMethods.Count - 1)
                         {
                             currentScrollSelection++;
-                            Console.Clear();
                             displayMenu();
                         }
                         break;
@@ -246,7 +247,6 @@ namespace MenuFramework
                         if (currentScrollSelection > 0)
                         {
                             currentScrollSelection--;
-                            Console.Clear();
                             displayMenu();
                         }
                         break;
@@ -277,11 +277,9 @@ namespace MenuFramework
                             {
                                 break;
                             }
-                            // Console.Clear();  // UNNECCESARY?
-                            // displayMenu();   //
                         }
                         choiceDelegate Choice = userMethods[input];
-                        Console.Clear();
+                        Console.SetCursorPosition(0, 0);
                         currentScrollSelection = input; // for external retrieval
                         hasRunList[input] = Choice();
                         break;
@@ -391,11 +389,12 @@ namespace MenuFramework
 
         public bool runMenu()
         {
+            Console.Clear();
             hasRunList.TrimExcess();
             KeepRunning = true;
             while (KeepRunning)
             {
-                Console.Clear();
+                Console.SetCursorPosition(0, 0);
                 displayMenu();
                 if (type == 3)
                 {
@@ -403,6 +402,7 @@ namespace MenuFramework
                 }
                 else if (type == 0)
                 {
+                    Console.Clear();
                 }
                 else getIntInput();
             }
@@ -410,10 +410,14 @@ namespace MenuFramework
         }
         public bool runMenu(out string userInput)
         {
-            hasRunList.TrimExcess();
             Console.Clear();
+
+            hasRunList.TrimExcess();
+            Console.SetCursorPosition(0, 0);
             displayMenu();
             userInput = getStringInput();
+            Console.Clear();
+
             return true;
         }
     }
